@@ -26,8 +26,8 @@ export class SismosService {
   }
 
   getEarthquakes(): Observable<any> {
-    const startTime = '2014-01-01';
-    const endTime = '2014-01-02';
+    const startTime = '2023-01-01';
+    const endTime = '2023-01-10';
     const format = 'geojson';
 
     const url = `${this.earthquakeAPIUrl}?format=${format}&starttime=${startTime}&endtime=${endTime}`;
